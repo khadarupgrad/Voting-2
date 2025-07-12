@@ -1,0 +1,32 @@
+{
+  "name": "voting-contract",
+  "version": "1.0.0",
+  "description": "Solidity smart contract for blockchain voting system",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.js",
+    "deploy:localhost": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "deploy:opbnb": "hardhat run scripts/deploy.js --network opbnb",
+    "verify": "hardhat verify"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@openzeppelin/contracts": "^4.9.3",
+    "hardhat": "^2.17.1"
+  },
+  "keywords": [
+    "blockchain",
+    "voting",
+    "solidity",
+    "ethereum",
+    "smart-contract"
+  ],
+  "author": "BlockVote Team",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.0.1"
+  }
+}
